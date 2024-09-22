@@ -1,23 +1,44 @@
-import { useState } from 'react';
+import { Footer } from "@/components/Footer";
+import { PageCounter } from "@/components/PageCounter";
+import { useState } from "react";
+
+function useCurrentDomain(): string | null | undefined {
+  const [domain, setDomain] = useState<string | null | undefined>(undefined);
+
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    const tabUrl = tabs[0].url;
+    if (!tabUrl) {
+      return;
+    }
+
+    const url = new URL(tabUrl);
+    url.pathname = "/";
+
+    if (url.protocol === "http:" || url.protocol === "https:") {
+      setDomain(url.toString());
+    } else {
+      setDomain(null);
+    }
+  });
+
+  return domain;
+}
 
 function App() {
-  const [count, setCount] = useState(0);
+  const domain = useCurrentDomain();
 
   return (
-    <>
-      <h1 className='font-mono text-lg'>WXT + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+    <div className="min-w-[30rem]">
+      <div className="px-2">
+        <h1 className="text-lg font-title text-center my-2">
+          Website Page Counter
+        </h1>
+
+        {domain !== undefined && <PageCounter domain={domain} />}
       </div>
-      <p className="read-the-docs">
-        Click on the WXT and React logos to learn more
-      </p>
-    </>
+
+      <Footer />
+    </div>
   );
 }
 

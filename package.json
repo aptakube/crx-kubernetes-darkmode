@@ -1,8 +1,8 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "crx-page-counter",
+  "description": "Quickly list and count all pages of any website in a single click. Built for SEO and web developers.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
@@ -15,17 +15,20 @@
     "postinstall": "wxt prepare"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@fontsource-variable/inter": "5.1.0",
+    "@tabler/icons-react": "3.17.0",
+    "cal-sans": "1.0.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@wxt-dev/module-react": "^1.1.0",
-    "typescript": "^5.5.4",
-    "wxt": "^0.19.1"
+    "@types/react": "18.3.8",
+    "@types/react-dom": "18.3.0",
+    "@wxt-dev/module-react": "1.1.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.12",
+    "typescript": "5.6.2",
+    "wxt": "0.19.10"
   }
 }
