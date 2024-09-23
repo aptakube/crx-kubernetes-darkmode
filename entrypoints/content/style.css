@@ -1,0 +1,107 @@
+:root {
+  --crx-background: #0a0a0a;
+  --crx-background1: #262626;
+  --crx-foreground: #d4d4d4;
+}
+
+body {
+  background-color: var(--crx-background) !important;
+  color: var(--crx-foreground) !important;
+}
+
+section:not(.light-text):not(.call-to-action) {
+  background-color: var(--crx-background) !important;
+  color: var(--crx-foreground) !important;
+}
+
+.gridPage p:not(.announcement-main > p) {
+  color: var(--crx-foreground) !important;
+}
+
+.td-outer a {
+  color: #3b82f6 !important;
+}
+
+.td-outer a:hover {
+  color: #60a5fa !important;
+}
+
+.td-sidebar-nav a {
+  color: var(--crx-foreground) !important;
+}
+
+.search-bar,
+.search-input,
+input[type="email"] {
+  background-color: var(--crx-background) !important;
+  color: var(--crx-foreground) !important;
+}
+
+#kubeweekly {
+  background-color: var(--crx-background1) !important;
+  color: var(--crx-foreground) !important;
+}
+
+.feature-state-notice,
+.feature-state-notice code,
+.feature-state-name,
+.feature-box div {
+  background-color: #172554 !important;
+  color: var(--crx-foreground) !important;
+}
+
+.gutter {
+  background-color: var(--crx-background1) !important;
+}
+
+.td-sidebar {
+  border-color: var(--crx-background1) !important;
+}
+
+.flip-nav header .td-navbar {
+  background-color: var(--crx-background1) !important;
+}
+
+.flip-nav header .td-navbar a {
+  color: var(--crx-foreground) !important;
+}
+
+.pi-pushmenu .sled {
+  background-color: var(--crx-background) !important;
+}
+
+.pi-pushmenu li {
+  border-bottom: 1px solid var(--crx-background1) !important;
+}
+
+.btn-primary {
+  color: var(--crx-foreground) !important;
+}
+
+.dropdown-menu {
+  border-color: var(--crx-background1) !important;
+  background-color: var(--crx-background1) !important;
+}
+
+.dropdown-item {
+  color: var(--crx-foreground) !important;
+}
+
+.dropdown-item:hover {
+  background: var(--crx-background) !important;
+}
+
+body .alert {
+  background-color: var(--crx-background1) !important;
+  color: var(--crx-foreground) !important;
+}
+
+body .alert h4 {
+  color: var(--crx-foreground) !important;
+}
+
+.highlight pre,
+.highlight {
+  background-color: var(--crx-background1) !important;
+  color: var(--crx-foreground) !important;
+}

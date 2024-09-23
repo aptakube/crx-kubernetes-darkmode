@@ -1,6 +1,6 @@
 {
-  "name": "crx-page-counter",
-  "description": "Quickly list and count all pages of any website in a single click. Built for SEO and web developers.",
+  "name": "crx-kubernetes-darkmode",
+  "description": "Dark Mode for Kubernetes.io",
   "private": true,
   "version": "1.0.0",
   "type": "module",
