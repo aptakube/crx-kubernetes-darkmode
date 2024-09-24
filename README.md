@@ -6,6 +6,14 @@ Chrome extension to enable dark mode for Kubernetes.io.
 
 That's all it does 😀
 
+# Installation
+
+<a href="https://chromewebstore.google.com/detail/kubernetes-dark-mode/adaahalingfoehcnkgcmicpfbonmkehn">
+<img src="./crx.png" alt="Chrome Web Store">
+</a>
+
+[https://chromewebstore.google.com/detail/kubernetes-dark-mode/adaahalingfoehcnkgcmicpfbonmkehn](https://chromewebstore.google.com/detail/kubernetes-dark-mode/adaahalingfoehcnkgcmicpfbonmkehn)
+
 ## 📃 License
 
 MIT
