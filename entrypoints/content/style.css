@@ -105,3 +105,20 @@ body .alert h4 {
   background-color: var(--crx-background1) !important;
   color: var(--crx-foreground) !important;
 }
+
+code {
+  font-size: 87.5%;
+  color: #d4d4d4 !important;
+  word-wrap: break-word
+}
+
+.table,
+.alert.alert-info>table,
+.alert.alert-caution>table,
+.alert.alert-danger>table,
+.td-content table,
+.td-box .row.section>table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #d4d4d4 !important
+}

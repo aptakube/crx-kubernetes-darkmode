@@ -2,7 +2,7 @@
   "name": "crx-kubernetes-darkmode",
   "description": "Dark Mode for Kubernetes.io",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",
